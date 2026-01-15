@@ -334,17 +334,30 @@ Date: ${new Date().toLocaleString('fr-FR')}
         </div>
       </section>
 
-      {/* Map Section (Optional - placeholder) */}
+      {/* Map Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-serif text-navy text-center mb-8">
             Visitez Notre Agence
           </h2>
-          <div className="bg-navy/10 rounded-xl h-96 flex items-center justify-center">
+          <div className="rounded-xl overflow-hidden shadow-lg h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8977582987937!2d-7.6177768!3d33.5893398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2f1c3e5a5e7%3A0x5e4f8c2d9b3a1c8!2s39%20Rue%20Omar%20Slaoui%2C%20Casablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Travel Plus Location"
+            />
+          </div>
+          <div className="mt-6 text-center">
+            <p className="text-gray-700 mb-2">
+              <strong>Adresse:</strong> 39 Rue Omar Slaoui, Casablanca, Maroc
+            </p>
             <p className="text-gray-600">
-              📍 39 Rue Omar Slaoui, Casablanca
-              <br />
-              <span className="text-sm">(Google Maps intégration à venir)</span>
+              <strong>Horaires:</strong> Lun-Ven: 9h-18h | Sam: 9h-13h
             </p>
           </div>
         </div>

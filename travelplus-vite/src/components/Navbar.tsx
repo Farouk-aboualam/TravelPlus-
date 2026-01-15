@@ -15,20 +15,12 @@ export default function Navbar() {
 
   const navigationLinks = [
     { name: 'Accueil', href: '/' },
-    { 
-      name: 'Maroc', 
-      href: '/maroc',
-      dropdown: [
-        { name: 'Circuit des Villes Impériales', href: '/maroc/villes-imperiales' },
-        { name: 'Route des Kasbahs', href: '/maroc/kasbahs' },
-        { name: 'Grand Tour du Maroc', href: '/maroc/grand-tour' },
-        { name: 'Plages & Détente', href: '/maroc/plages' },
-      ]
-    },
+    { name: 'À Propos', href: '/a-propos' },
     { 
       name: 'Nos Destinations', 
       href: '/destinations',
       dropdown: [
+        { name: 'Maroc', href: '/destinations/maroc' },
         { name: 'Turquie', href: '/destinations/turquie' },
         { name: 'Égypte', href: '/destinations/egypte' },
         { name: 'Dubaï', href: '/destinations/dubai' },
@@ -38,7 +30,6 @@ export default function Navbar() {
     },
     { name: 'Programmes', href: '/programmes' },
     { name: 'Entreprises', href: '/entreprises' },
-    { name: 'Personnaliser', href: '/personnaliser' },
     { name: 'Contact', href: '/contact' },
   ];
 
